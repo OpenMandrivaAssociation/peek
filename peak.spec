@@ -1,6 +1,6 @@
 Name:           peek
 Version:        1.3.1
-Release:        %mkrel 1
+Release:        1
 Summary:        Simple animated GIF screen recorder with an easy to use interface
 Group:          Video/Utilities
 License:        GPLv3
