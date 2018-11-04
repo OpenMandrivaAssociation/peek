@@ -11,7 +11,7 @@ BuildRequires:  cmake
 BuildRequires:  gettext
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(keybinder-3.0)
-BuildRequires:  pkgconfig(libvala-0.40)
+BuildRequires:  pkgconfig(vapigen)
 
 Requires:       ffmpeg
 Requires:       imagemagick
