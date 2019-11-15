@@ -1,5 +1,5 @@
 Name:           peek
-Version:        1.3.1
+Version:        1.4.0
 Release:        1
 Summary:        Simple animated GIF screen recorder with an easy to use interface
 Group:          Video/Utilities
@@ -7,7 +7,7 @@ License:        GPLv3
 URL:            https://github.com/phw/peek
 Source0:        https://github.com/phw/peek/archive/%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires:  cmake
+BuildRequires:  meson
 BuildRequires:  gettext
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(keybinder-3.0)
@@ -26,11 +26,11 @@ from your screen.
 %autosetup
 
 %build
-%cmake -DBUILD_TESTS=OFF
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install -C build
+%meson_install
 
 %find_lang %{name}
 
@@ -41,4 +41,4 @@ from your screen.
 %{_datadir}/dbus-1/services/com.uploadedlobster.%{name}.service
 %{_datadir}/glib-2.0/schemas/com.uploadedlobster.%{name}.gschema.xml
 %{_datadir}/metainfo/com.uploadedlobster.%{name}.appdata.xml
-%{_iconsdir}/hicolor/*/apps/com.uploadedlobster.%{name}.png
+%{_iconsdir}/hicolor/*/apps/com.uploadedlobster.%{name}*.svg
