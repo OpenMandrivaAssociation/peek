@@ -41,4 +41,4 @@ from your screen.
 %{_datadir}/dbus-1/services/com.uploadedlobster.%{name}.service
 %{_datadir}/glib-2.0/schemas/com.uploadedlobster.%{name}.gschema.xml
 %{_datadir}/metainfo/com.uploadedlobster.%{name}.appdata.xml
-%{_iconsdir}/hicolor/*/apps/com.uploadedlobster.%{name}.png
+%{_iconsdir}/hicolor/*/apps/com.uploadedlobster.%{name}*.svg
