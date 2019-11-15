@@ -7,7 +7,7 @@ License:        GPLv3
 URL:            https://github.com/phw/peek
 Source0:        https://github.com/phw/peek/archive/%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires:  cmake
+BuildRequires:  meson
 BuildRequires:  gettext
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(keybinder-3.0)
@@ -26,11 +26,11 @@ from your screen.
 %autosetup
 
 %build
-%cmake -DBUILD_TESTS=OFF
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install -C build
+%meson_install
 
 %find_lang %{name}
 
