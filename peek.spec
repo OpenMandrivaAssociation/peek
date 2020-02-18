@@ -1,5 +1,5 @@
 Name:           peek
-Version:        1.4.0
+Version:        1.5.0
 Release:        1
 Summary:        Simple animated GIF screen recorder with an easy to use interface
 Group:          Video/Utilities
