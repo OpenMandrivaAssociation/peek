@@ -1,5 +1,5 @@
 Name:           peek
-Version:        1.5.0
+Version:        1.5.1
 Release:        1
 Summary:        Simple animated GIF screen recorder with an easy to use interface
 Group:          Video/Utilities
@@ -23,7 +23,7 @@ A simple tool that allows you to record short animated GIF images
 from your screen.
 
 %prep
-%autosetup
+%autosetup -p1
 
 %build
 %meson
